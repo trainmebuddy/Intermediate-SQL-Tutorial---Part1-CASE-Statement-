@@ -106,7 +106,7 @@ SELECT
 	WHEN D.DepartmentName = 'Human Resources'	THEN E.Salary * .05
 	WHEN D.DepartmentName = 'Marketing'			THEN E.Salary * .04
 	WHEN D.DepartmentName = 'Purchasing'		THEN E.Salary * .03
-	ELSE Salary
+	ELSE 0
 END Bonus
 FROM Employee AS E
 LEFT JOIN Department AS D
